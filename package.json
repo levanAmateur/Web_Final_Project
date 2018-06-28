@@ -1,0 +1,23 @@
+{
+  "name": "web_final_project",
+  "version": "1.0.0",
+  "description": "Freeuni Spring Web Final Project",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/levanAmateur/Web_Final_Project.git"
+  },
+  "author": "Levan Karanadze",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/levanAmateur/Web_Final_Project/issues"
+  },
+  "homepage": "https://github.com/levanAmateur/Web_Final_Project#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
