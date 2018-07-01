@@ -1,0 +1,106 @@
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: block;
+    width: 100%;
+    height: 15%;
+    margin: 0;
+    padding: 0;
+    clear: both;
+}
+
+#logo-ID {
+    display: block;
+    width: 20%;
+    height: 40%;
+    clear: both;
+    display: inline-block;
+    vertical-align: bottom;
+    margin: 5px;
+}
+
+#logo-photo-ID {
+    width: 100%;
+    height: 100%;
+}
+
+
+.top-menu {
+    width: 98%;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+    list-style: none;
+	display: block;
+    clear: both;
+	background-color: #f2e6dc;
+    text-transform: uppercase;
+    font-size: 100%;
+    border-radius: 8px;
+}
+
+.top-menu ul {
+    width: 99%;
+    height: auto;
+    margin: 0 auto;
+    padding: 5px;
+    position: relative;
+    background-color: #323232;
+    border-radius: 8px;
+}
+
+.top-menu li {
+	display: inline;
+    margin: 5px;
+    padding: 5px;
+	font-weight: bold;
+    border-radius: 5px;
+}
+
+.top-menu li a {
+	text-decoration: none;
+	color: #fabc01;
+    cursor: pointer;
+}
+
+.main-part {
+    position: absolute;
+    left: 15%;
+    right: 15%;
+    width: 70%;
+    height: 80%;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #e0e0e0;
+}
+
+.news {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 5px;
+    padding: 5px;
+    background-color: white;
+    border-radius: 8px;
+}
