@@ -1,5 +1,13 @@
 var gulp = require('gulp');
 
-gulp .task('bla', function() {
-	console.log("gulpppppppppppp");
+
+gulp.task('scripts', function() {
+	console.log("Yeaah!!!");
 });
+
+
+/*
+	Default task
+*/
+gulp.task('default', ['scripts']);
+
