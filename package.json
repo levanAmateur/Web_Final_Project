@@ -4,7 +4,7 @@
   "description": "Freeuni Spring Web Final Project",
   "main": "index.js",
   "scripts": {
-    "start": "node ./app/js/index.js",
+    "start": "node ./app/js/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,5 +19,12 @@
   "homepage": "https://github.com/levanAmateur/Web_Final_Project#readme",
   "devDependencies": {
     "gulp": "^3.9.1"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "mysql": "^2.15.0",
+    "protocol": "^0.1.4",
+    "safetimeout": "^0.1.2",
+    "timeout": "^0.2.1"
   }
 }
