@@ -2,24 +2,19 @@
 <html>
 <head>
 	<title>Freeuni sports</title>
-	<meta name="description" content="Freeuni, Sport"> <!--content must be suitable for search engine -->
+	<meta name="description" content="Freeuni, Sport"> 
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="../app/css/styles.css">
+	<link rel="stylesheet" type="text/css" href="../css/styles.css">
 </head>
 <body>
-	<div class="login">
-		<form action="#login">
-		 Usernmae: <input type="text" name="firstname" value="Usernmae">
-		 <br>
-		 Password: <input type="password" name="lastname">
-		 <br><br>
-		 <input type="submit" value="login">
-		</form> 
+	<div class="login", id="login-ID">
+		<form id="login-form" method="post" action="/login">
+			username: <input type="text" name="username"><br>
+		  	password: <input type="password" name="password"><br><br>
+			<input type="submit" value="login">
+		</form>
 	</div>
-	<form action="#registration">
-    	<input type="submit" value="Registration" />
-	</form>
-
-	<script src="../app/js/app.js"></script>
+	
+	<script src="../js/index.js"></script>
 </body>
 </html>
