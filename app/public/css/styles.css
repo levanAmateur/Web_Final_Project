@@ -192,6 +192,23 @@ div {
     border: 2px solid #ccc;
 }
 
+table {
+    width: 1000px;
+    height: 500px;
+    margin: auto;
+    border-spacing: 5px;
+    border-radius: 10px;
+    position: relative;
+    top: 15%;
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #e0e0e0;
+}
+
 .login {
     width: 500px;
     height: 250px;
