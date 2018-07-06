@@ -126,6 +126,28 @@ div {
     cursor: pointer;
 }
 
+.sidebar li.c ul {
+    display: none;
+}
+
+.sidebar li.c p {
+    margin: 0;
+}
+
+.sidebar li.c:focus {
+    outline: none;
+}
+
+.sidebar li.c:focus ul {
+    display: block;
+}
+
+.sidebar ul.b {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
 .middle {
     width: 100%;
     float: left;

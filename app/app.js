@@ -33,7 +33,7 @@ app.listen(5000, () => {
 });
 
 app.get('/', (req, res) => {
-  	res.sendFile(path.join(__dirname + '/html/index.html'));
+  	res.sendFile(path.join(__dirname + '/html/home.html'));
 });
 
 
@@ -46,21 +46,22 @@ app.post('/login', function(req, resp) {
 	console.log(username);
 	console.log(password);
 	console.log(query);
-	connection.query(query, function(error, rows, fields) {
-		if(error) {
-			console.log("error");
-		} else {
-			console.log("Successul query");
-			if(rows.affectedRows > 1) {
-				//daalogine
-			}
-			if(rows.affectedRows == 1) {
-				console.log('bazas daerxa :D');
-			}
-			if(rows.affectedRows == 0) {
-				//incorrect
-			}		
-		}
-		resp.send('Hello');
-	});
+	// connection.query(query, function(error, rows, fields) {
+	// 	if(error) {
+	// 		console.log("error");
+	// 	} else {
+	// 		console.log("Successul query");
+	// 		if(rows.affectedRows > 1) {
+	// 			//daalogine
+	// 		}
+	// 		if(rows.affectedRows == 1) {
+	// 			console.log('bazas daerxa :D');
+	// 		}
+	// 		if(rows.affectedRows == 0) {
+	// 			//incorrect
+	// 		}		
+	// 	}
+	// 	resp.send('Hello');
+	// });
+	res.sendFile(path.join(__dirname + '/html/home.html'));
 })
