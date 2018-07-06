@@ -26,13 +26,13 @@
 		<div class="sidebar">
 			<ul class="a">
 				<li class="c" tabindex="-1">
-					<p>Matchday 1, 14.06.2018</p>
+					<p class="date"></p>
 					<ul class="b">
-						<li>Russia-Saudi Arabia</li>
+						<li class="game"></li>
 					</ul>
 				</li>
-				<li class="c" tabindex="-1">
-					<p>Matchday 2, 15.06.2018</p>
+<!-- 				<li id="game2" class="c" tabindex="-1">
+					<p >Matchday 2, 15.06.2018</p>
 					<ul class="b">
 						<li>Egypt-Uruguay</li>
 					</ul>
@@ -45,21 +45,21 @@
 				</li>
 				<li class="c" tabindex="-1">
 					Matchday 5, 18.06.2018
-				</li>
+				</li> -->
 			</ul>
 		</div>
 		<div class="middle">
-			<div class="matchday">
-				<p>Matchday 1, 14.06.2018</p>
+			<div id="mid" class="matchday">
+				<p class="date">Matchday 1, 14.06.2018</p>
 				<div class="info">
 					<div class="player">
-						<img class="player-logo" src="../images/russia.png" style="float: right;">
-						<p>Russia</p>
+						<img class="player1-logo" src="../images/russia.png" style="float: right;">
+						<p class ="player1-name">Russia</p>
 					</div>
 					<p>VS</p>
 					<div class="player">
-						<img class="player-logo" src="../images/saudiarabia.png" style="float: left">
-						<p>Saudi Arabia</p>
+						<img class="player2-logo" src="../images/saudiarabia.png" style="float: left">
+						<p class ="player2-name">Saudi Arabia</p>
 					</div>
 				</div>
 				<button>1</button>
@@ -68,6 +68,7 @@
 			</div>
 		</div>
 	</div>
+	<script src="../js/data.js"></script>
 	<script src="../js/home.js"></script>
 </body>
 </html> 
