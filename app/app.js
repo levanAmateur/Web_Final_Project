@@ -36,8 +36,17 @@ app.get('/', (req, res) => {
   	res.sendFile(path.join(__dirname + '/html/home.html'));
 });
 
+app.get('/home', (req, res) => {
+  	res.sendFile(path.join(__dirname + '/html/home.html'));
+});
 
+app.get('/groups', (req, res) => {
+  	res.sendFile(path.join(__dirname + '/html/groups.html'));
+});
 
+app.get('/aboutus', (req, res) => {
+  	res.sendFile(path.join(__dirname + '/html/aboutus.html'));
+});
 
 app.post('/login', function(req, resp) {
 	var username = req.body.username;
