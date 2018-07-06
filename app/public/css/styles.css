@@ -20,61 +20,66 @@ div {
 }
 
 .header {
-    display: block;
+    display: flex;
     width: 100%;
-    height: 15%;
-    margin: 0;
-    padding: 0;
-    clear: both;
+    height: 60px;
+    /*margin: 0;*/
+    /*padding: 0;*/
 }
 
 #logo-ID {
-    display: block;
-    width: 20%;
-    height: 40%;
-    clear: both;
-    display: inline-block;
-    vertical-align: bottom;
-    margin: 5px;
+    /*display: block;*/
+    width: 246px;
+    height: 100%;
+    /*clear: both;*/
+    /*display: inline-block;*/
+    /*vertical-align: bottom;*/
+    margin: 0 5px 0 0;
+    float: left;
 }
 
 #logo-photo-ID {
-    width: 100%;
-    height: 100%;
+    /*width: 100%;*/
+    /*height: 100%;*/
 }
 
 
 .top-menu {
-    width: 98%;
-    height: auto;
-    margin: 0 auto;
-    padding: 10px;
-    position: relative;
-    list-style: none;
-	display: block;
-    clear: both;
+    width: 100%;
+    height: 100%;
+    /*margin: 0 auto;*/
+    /*padding: 10px;*/
+    /*position: relative;*/
+    /*list-style: none;*/
+	/*display: block;*/
+    /*clear: both;*/
 	background-color: #f2e6dc;
     text-transform: uppercase;
     font-size: 100%;
     border-radius: 8px;
+    float: left;
 }
 
 .top-menu ul {
-    width: 99%;
-    height: auto;
-    margin: 0 auto;
-    padding: 5px;
-    position: relative;
-    background-color: #323232;
-    border-radius: 8px;
+    width: 100%;
+    height: 28px;
+    /*margin: auto;*/
+    list-style-type: none;
+    /*padding: 5px;*/
+    /*position: relative;*/
+    /*background-color:#323232;*/
+    border-radius: 10px;
 }
 
 .top-menu li {
-	display: inline;
-    margin: 5px;
+	/*display: inline;*/
+    margin: 0 5px;
+    /*border: 5px solid #cce5ff;*/
     padding: 5px;
 	font-weight: bold;
-    border-radius: 5px;
+    border-radius: 10px;
+    background-color: #3399ff;
+    float: left;
 }
 
 .top-menu li a {
@@ -84,48 +89,65 @@ div {
 }
 
 .main-part {
-    position: absolute;
-    left: 15%;
-    right: 15%;
-    width: 70%;
-    height: 80%;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    /*position: absolute;*/
+    /*left: 15%;*/
+    /*right: 15%;*/
+    /*width: 70%;*/
+    /*height: 80%;*/
     margin-top: 10px;
-    border-radius: 5px;
+    /*border-radius: 5px;*/
     text-align: center;
-    background-color: #e0e0e0;
+    /*background-color: #e0e0e0;*/
+}
+
+.sidebar {
+    width: 25%;
+    float: left;
+}
+
+.middle {
+    width: 100%;
+    float: left;
 }
 
 .news {
     width: 90%;
     height: auto;
-    margin: 0 auto;
-    margin-top: 5px;
-    padding: 5px;
-    background-color: white;
-    border-radius: 8px;
+    background-color: #e0e0e0;
+    margin: auto;
+    /*margin-top: 5px;*/
+    /*padding: 5px;*/
+    /*background-color: white;*/
+    border-radius: 10px;
 }
 
 .login{
-    width:500px;
-    height:250px;
-    position:absolute;
-    left:35%;
-    top:35%;
-    border:5px solid #3CBC8D;
-    border-radius:10px;
+    width: 500px;
+    height: 250px;
+    position: absolute;
+    left: 35%;
+    top: 35%;
+    border: 5px solid #3CBC8D;
+    border-radius: 10px;
 }
+
 #login-form{
-    position:absolute;
-    left:25%;
-    top:20%;
+    position: absolute;
+    left: 25%;
+    top: 20%;
 }
-input[type=text],input[type=password]{
-    width:100%;
-    padding:12px 20px;
-    border-radius:4px;
+
+input[type=text], input[type=password]{
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 4px;
     background-color: #3CBC8D;
     color: white;
 }
+
 input[type=submit]{
     background-color: #3CBC8D;
     color: white;
