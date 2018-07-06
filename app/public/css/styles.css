@@ -108,23 +108,69 @@ div {
     float: left;
 }
 
+.sidebar ul.a {
+    width: 90%;
+    height: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar li.c {
+    width: 100%;
+    height: auto;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    padding: 5px 0 5px 0;
+    margin: 0 0 10px 0;
+    cursor: pointer;
+}
+
 .middle {
     width: 100%;
     float: left;
 }
 
-.news {
+.matchday {
     width: 90%;
     height: auto;
     background-color: #e0e0e0;
     margin: auto;
     /*margin-top: 5px;*/
-    /*padding: 5px;*/
+    padding: 5px 0 5px 0;
     /*background-color: white;*/
     border-radius: 10px;
 }
 
-.login{
+.matchday p {
+    font-size: 50px;
+}
+
+.info {
+    display: flex;
+    width: auto;
+    margin: 0 0 10px 0;
+}
+
+.player {
+    margin: 0 50px 0 50px;
+}
+
+.player img {
+    width: 150px;
+    height: 100px;
+    position: relative;
+    top: 25px;
+}
+
+.matchday button {
+    padding: 20px;
+    cursor: pointer;
+    background-color: #f8f8f8;
+    border: 2px solid #ccc;
+}
+
+.login {
     width: 500px;
     height: 250px;
     position: absolute;
@@ -134,13 +180,13 @@ div {
     border-radius: 10px;
 }
 
-#login-form{
+#login-form {
     position: absolute;
     left: 25%;
     top: 20%;
 }
 
-input[type=text], input[type=password]{
+input[type=text], input[type=password] {
     width: 100%;
     padding: 12px 20px;
     border-radius: 4px;
@@ -148,7 +194,7 @@ input[type=text], input[type=password]{
     color: white;
 }
 
-input[type=submit]{
+input[type=submit] {
     background-color: #3CBC8D;
     color: white;
     padding: 16px 32px;
