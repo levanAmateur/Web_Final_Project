@@ -10,15 +10,12 @@
 <body>
 
 	<div id="header-ID", class="header"> 
-		<div id="logo-ID", class="s">
-			<a href="index.html">
-			<img id="logo-photo-ID" src="../images/logo.png">
-			</a>
-		</div> <!-- /.logo -->
 		<div id="top-menu-ID", class="top-menu">
+			<div class="logo"><p>Freeuni Sports</p></div>
 			<ul id="menu-bar-ID", class="menu-bar">
-				<li><a href="home.html"> home </a> <span class="separator"></span></li></li>
-				<li><a href="groups.html"> groups </a> <span class="separator"></span></li></li>
+				<li><a href="home.html"> Home </a> <span class="separator"></span></li></li>
+				<li><a href="groups.html"> Groups </a> <span class="separator"></span></li></li>
+				<li><a href="home.html"> About Us </a> <span class="separator"></span></li></li>
 			</ul>
 		</div> <!-- /.top-menu -->
 	</div> <!-- /.header -->
@@ -31,21 +28,6 @@
 						<li class="game"></li>
 					</ul>
 				</li>
-<!-- 				<li id="game2" class="c" tabindex="-1">
-					<p >Matchday 2, 15.06.2018</p>
-					<ul class="b">
-						<li>Egypt-Uruguay</li>
-					</ul>
-				</li>
-				<li class="c" tabindex="-1">
-					Matchday 3, 16.06.2018
-				</li>
-				<li class="c" tabindex="-1">
-					Matchday 4, 17.06.2018
-				</li>
-				<li class="c" tabindex="-1">
-					Matchday 5, 18.06.2018
-				</li> -->
 			</ul>
 		</div>
 		<div class="middle">
@@ -62,11 +44,29 @@
 						<p class ="player2-name">Saudi Arabia</p>
 					</div>
 				</div>
-				<button>1</button>
-				<button>X</button>
-				<button>2</button>
+				<button id="place1">1</button>
+				<button id="placeX">X</button>
+				<button id="place2">2</button>
 			</div>
 		</div>
+		<div class="bets">
+			<div style="height: 20px"></div>
+			<form>
+				<ul class="a">
+					<li class="c" tabindex="-1">
+						<p class="date"></p>
+						<ul class="b">
+							<li class="game"></li>
+						</ul>
+					</li>
+				</ul>
+				<button type="submit"> Place bet </button>
+			</form>
+		</div>
+	</div>
+	<div class="footer">
+		<span>Freeuni Sports </span>
+		<span> All Rights Reserved</span>
 	</div>
 	<script src="../js/data.js"></script>
 	<script src="../js/home.js"></script>

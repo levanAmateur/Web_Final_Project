@@ -10,6 +10,8 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
+    background-color: #e9ebed;
+    font-family: Fibon;
 }
 
 div {
@@ -43,8 +45,22 @@ div {
     /*height: 100%;*/
 }
 
+.logo{
+    font-family: Fibon;
+    color: #fabc01;
+    font-weight: bold;
+    font-size: 23px;
+    margin-left: 20px;
+}
+
+.menu-bar{
+    margin-right: 50px;
+    float: right;
+    font-family: Fibon;
+}
 
 .top-menu {
+    display: flex;
     width: 100%;
     height: 100%;
     /*margin: 0 auto;*/
@@ -53,22 +69,18 @@ div {
     /*list-style: none;*/
 	/*display: block;*/
     /*clear: both;*/
-	background-color: #f2e6dc;
-    text-transform: uppercase;
+	background-color: #0a1926;
     font-size: 100%;
-    border-radius: 8px;
-    float: left;
 }
 
 .top-menu ul {
     width: 100%;
-    height: 28px;
+    height: 23px;
     /*margin: auto;*/
     list-style-type: none;
     /*padding: 5px;*/
     /*position: relative;*/
     /*background-color:#323232;*/
-    border-radius: 10px;
 }
 
 .top-menu li {
@@ -77,14 +89,12 @@ div {
     /*border: 5px solid #cce5ff;*/
     padding: 5px;
 	font-weight: bold;
-    border-radius: 10px;
-    background-color: #3399ff;
-    float: left;
+    float: right;
 }
 
 .top-menu li a {
 	text-decoration: none;
-	color: #fabc01;
+	color: white;
     cursor: pointer;
 }
 
@@ -103,13 +113,19 @@ div {
     /*background-color: #e0e0e0;*/
 }
 
-.sidebar {
+.sidebar, .bets {
     width: 25%;
     float: left;
 }
 
+.bets{
+    background-color: #0a1926;
+    color: white;
+    height: 100px;  
+    margin: 0 10px 1px 0;
+}
+
 .sidebar ul.a {
-    width: 90%;
     height: 100%;
     list-style-type: none;
     margin: 0;
@@ -117,13 +133,12 @@ div {
 }
 
 .sidebar li.c {
-    width: 100%;
     height: auto;
-    background-color: #e0e0e0;
-    border-radius: 10px;
+    background-color: #0a1926;
     padding: 5px 0 5px 0;
-    margin: 0 0 10px 0;
+    margin: 0 0 1px 10px;
     cursor: pointer;
+    color: white;
 }
 
 .sidebar li.c ul {
@@ -149,7 +164,6 @@ div {
 }
 
 .middle {
-    width: 100%;
     float: left;
 }
 
@@ -161,7 +175,6 @@ div {
     /*margin-top: 5px;*/
     padding: 5px 0 5px 0;
     /*background-color: white;*/
-    border-radius: 10px;
 }
 
 .matchday p {
@@ -197,7 +210,6 @@ table {
     height: 500px;
     margin: auto;
     border-spacing: 5px;
-    border-radius: 10px;
     position: relative;
     top: 15%;
 }
@@ -205,7 +217,6 @@ table {
 th, td {
     padding: 15px;
     border: 1px solid black;
-    border-radius: 10px;
     background-color: #e0e0e0;
 }
 
@@ -216,7 +227,6 @@ th, td {
     left: 35%;
     top: 35%;
     border: 5px solid #3CBC8D;
-    border-radius: 10px;
 }
 
 #login-form {
@@ -228,7 +238,6 @@ th, td {
 input[type=text], input[type=password] {
     width: 100%;
     padding: 12px 20px;
-    border-radius: 4px;
     background-color: #3CBC8D;
     color: white;
 }
@@ -243,4 +252,25 @@ input[type=submit] {
 
 .date, .b, .game{
     pointer-events: none;
+}
+
+@font-face {
+    font-family: Fibon;
+    src: url(Fibon.ttf);
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #0a1926;
+    text-align: center;
+}
+
+.footer span {
+    font-family: Fibon;
+    color: #fabc01;
+    font-size: 13px;
 }
