@@ -3,41 +3,73 @@ var matchInfo = document.querySelector('.middle');
 var sidebarCont = document.querySelector('.a');
 var gameBar = sidebarCont.querySelector('.c');
 gameBar.querySelector('.date').innerHTML = Games[0].date;
-gameBar.querySelector('.game').innerHTML = Games[0].p1name + " - " + Games[0].p2name;
+//gameBar.querySelector('.game').innerHTML = Games[0].p1name + " - " + Games[0].p2name;
 gameBar.id = "gameBar-0";
 
-function listeners(){
-	for(var i = 0; i<Games.length; i++){
-		var x = document.getElementById("gameBar-"+i);
-		x.addEventListener("click", function(e){
-			var idstr = e.target.id;
-			var ididx = idstr.indexOf("-");
-			var id = idstr.substring(ididx+1);
-			var gameObj = Games[id];
-			matchInfo.querySelector('.date').innerHTML = gameObj.date;
-			matchInfo.querySelector('.player1-name').innerHTML = gameObj.p1name;
-			matchInfo.querySelector('.player2-name').innerHTML = gameObj.p2name;
-			matchInfo.querySelector('.player1-logo').src = gameObj.img1;
-			matchInfo.querySelector('.player2-logo').src = gameObj.img2;
-		});
-	}
-}
 
 function gamesList(){
+	clone(Games[0], 0);
 	Games.forEach(function(elem, i){
 		if(i != 0){
-			var clone = gameBar.cloneNode(true);
-			clone.querySelector('.date').innerHTML = elem.date;
-			clone.querySelector('.game').innerHTML = elem.p1name + " - " + elem.p2name;
-			clone.id = "gameBar-"+i;
-			sidebarCont.appendChild(clone);
+			clone(elem, i);
 		}else
 			return;
 	})
+	sidebarCont.removeChild(sidebarCont.childNodes[1]);    
 }
 
+function clone(elem, i){
+	var clone = gameBar.cloneNode(true);
+	clone.querySelector('.date').innerHTML = elem.date;
 
+	var gamesArr = elem.gamesArr;
+	var b_game_ul = clone.querySelector('.b');
+	var b_game = b_game_ul.querySelector('.game');
 
+	b_game.innerHTML = gamesArr[0].p1name + " - " + gamesArr[0].p2name;
+	b_game.id = "gameBar-"+i+"+0";
+
+	for(var k = 1; k < gamesArr.length; k++){
+		
+		var b_game_clone = b_game.cloneNode(true);
+		b_game_clone.innerHTML = gamesArr[k].p1name + " - " + gamesArr[k].p2name;
+		b_game_clone.id = "gameBar-"+i+"+"+k;
+		b_game_ul.appendChild(b_game_clone);
+	}
+
+	//clone.querySelector('.game').innerHTML = elem.p1name + " - " + elem.p2name;
+	clone.id = "gameBar-"+i;
+	sidebarCont.appendChild(clone);
+}
+
+function listeners(){
+	for(var i = 0; i<Games.length; i++){
+		var gameObj = Games[i];
+		for(var k = 0; k<Games[i].gamesArr.length; k++){
+			var x = document.getElementById("gameBar-"+i+"+"+k);
+			x.addEventListener("click", function(e){
+				var i_str = e.target.id;
+				var i_idx = i_str.indexOf("-");
+
+				var k_idx = i_str.indexOf("+");
+				var k_ = i_str.substring(k_idx+1);
+				var i_ = i_str.substring(i_idx+1, k_idx);
+				var gamesArr = Games[i_].gamesArr[k_];
+
+				matchInfo.querySelector('.date').innerHTML = Games[i_].date;
+				matchInfo.querySelector('.player1-name').innerHTML = gamesArr.p1name;
+				matchInfo.querySelector('.player2-name').innerHTML = gamesArr.p2name;
+
+				var res1 = Flags.filter(flag => flag.name == gamesArr.p1name);
+				var res2 = Flags.filter(flag => flag.name == gamesArr.p2name);
+
+				matchInfo.querySelector('.player1-logo').src = res1[0].img;
+				matchInfo.querySelector('.player2-logo').src = res2[0].img;
+			});
+
+		}
+	}
+}
 
 gamesList();
 listeners();
