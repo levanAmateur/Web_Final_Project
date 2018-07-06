@@ -3,6 +3,8 @@ var mysql = require('mysql');
 var app = express();
 var path = require("path");
 
+app.use(express.static(__dirname + '/public'));
+
 const bodyParser = require('body-parser')
 
 app.use(bodyParser.json())

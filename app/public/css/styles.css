@@ -104,3 +104,32 @@ div {
     background-color: white;
     border-radius: 8px;
 }
+
+.login{
+    width:500px;
+    height:250px;
+    position:absolute;
+    left:35%;
+    top:35%;
+    border:5px solid #3CBC8D;
+    border-radius:10px;
+}
+#login-form{
+    position:absolute;
+    left:25%;
+    top:20%;
+}
+input[type=text],input[type=password]{
+    width:100%;
+    padding:12px 20px;
+    border-radius:4px;
+    background-color: #3CBC8D;
+    color: white;
+}
+input[type=submit]{
+    background-color: #3CBC8D;
+    color: white;
+    padding: 16px 32px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
