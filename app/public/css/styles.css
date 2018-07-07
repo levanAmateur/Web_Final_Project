@@ -270,8 +270,6 @@ input[type=submit] {
 }
 
 .footer {
-    position: fixed;
-    left: 0;
     bottom: 0;
     width: 100%;
     height: 40px;
@@ -283,4 +281,28 @@ input[type=submit] {
     font-family: Fibon;
     color: #fabc01;
     font-size: 13px;
+}
+
+.bets {
+    width: 25%;
+    float: left;
+}
+
+.bets form{
+    background: red;
+    margin-right: 5px;
+    clear: both;
+}
+
+.bets ul {
+    width: 100%;
+    display: block;
+}
+
+.bets li {
+    width: 100%;
+    float: left;
+    clear: both;
+    display: block;
+    border-color: black;
 }

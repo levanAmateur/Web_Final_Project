@@ -73,3 +73,35 @@ function listeners(){
 
 gamesList();
 listeners();
+
+var placer = document.querySelector('.bets');
+
+var positions = [];
+
+document.getElementById('place1').addEventListener("click", function(e){
+	var p1 = document.querySelector('.player1-name').innerHTML;
+	var p2 = document.querySelector('.player2-name').innerHTML;
+	addPosition("1", p1, p2);
+});
+
+document.getElementById('place2').addEventListener("click", function(e){
+	var p1 = document.querySelector('.player1-name').innerHTML;
+	var p2 = document.querySelector('.player2-name').innerHTML;
+	addPosition("2", p1, p2);
+});
+
+document.getElementById('placeX').addEventListener("click", function(e){
+	var p1 = document.querySelector('.player1-name').innerHTML;
+	var p2 = document.querySelector('.player2-name').innerHTML;
+	addPosition("X", p1, p2);
+});
+
+function addPosition(prediction, p1, p2) {
+	if(positions.includes(p1) || positions.includes(p2)) {
+		// Do nothing
+	} else {
+		console.log(p1);
+		placer.querySelector('.betul').innerHTML += "<li>" + p1 + " vs " + p2 + " - " + prediction + "</li>";
+		positions.push(p1);
+	}
+}
