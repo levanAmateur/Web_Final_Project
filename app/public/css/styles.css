@@ -253,8 +253,8 @@ input[type=text], input[type=password] {
 }
 
 input[type=submit] {
-    background-color: #3CBC8D;
-    color: white;
+    background-color: #fabc01;
+    color: #0a1926;
     padding: 16px 32px;
     margin: 4px 2px;
     cursor: pointer;
@@ -281,7 +281,6 @@ input[type=submit] {
 
 .bets {
     width: 25%;
-    float: left;
 }
 
 .bets form{
@@ -293,6 +292,8 @@ input[type=submit] {
 .bets ul {
     width: 100%;
     display: block;
+    margin: 0;
+    padding: 0;
 }
 
 .bets li {
@@ -302,8 +303,5 @@ input[type=submit] {
     display: block;
     border-color: black;
     color: white;
-}
-
-#place-bet {
-    background-color: #fabc01;
+    border: 1px solid white;
 }
