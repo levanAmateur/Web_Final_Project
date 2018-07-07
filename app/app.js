@@ -48,29 +48,7 @@ app.get('/aboutus', (req, res) => {
   	res.sendFile(path.join(__dirname + '/html/aboutus.html'));
 });
 
-app.post('/login', function(req, resp) {
-	var username = req.body.username;
-	var password = req.body.password;
-	var query = "select * from USERS where USERNAME='" + username + "' and password='" + password +"';";
-	console.log(username);
-	console.log(password);
-	console.log(query);
-	// connection.query(query, function(error, rows, fields) {
-	// 	if(error) {
-	// 		console.log("error");
-	// 	} else {
-	// 		console.log("Successul query");
-	// 		if(rows.affectedRows > 1) {
-	// 			//daalogine
-	// 		}
-	// 		if(rows.affectedRows == 1) {
-	// 			console.log('bazas daerxa :D');
-	// 		}
-	// 		if(rows.affectedRows == 0) {
-	// 			//incorrect
-	// 		}		
-	// 	}
-	// 	resp.send('Hello');
-	// });
-	res.sendFile(path.join(__dirname + '/html/home.html'));
-})
+app.get('/placebet', (req, res) => {
+  	res.sendFile(path.join(__dirname + '/html/placebet.html'));
+});
+
